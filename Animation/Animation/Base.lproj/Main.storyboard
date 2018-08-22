@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ceK-sh-fur">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="Z9H-nX-Roj">
+            <objects>
+                <viewController id="ceK-sh-fur" customClass="AnimationViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2l-5v-QBd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-ZQ-bY3">
+                                <rect key="frame" x="10" y="607" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="et3-MK-KC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation can explain whatever the mind of man can conceive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1I-r8-O54">
+                                <rect key="frame" x="10" y="293.5" width="355" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DU2-tF-msg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wtK-ZQ-bY3" firstAttribute="leading" secondItem="slY-bn-ekg" secondAttribute="leading" constant="10" id="YNo-EC-ggE"/>
+                            <constraint firstItem="u1I-r8-O54" firstAttribute="leading" secondItem="C2l-5v-QBd" secondAttribute="leading" constant="10" id="Yh2-ZY-Zdm"/>
+                            <constraint firstAttribute="trailing" secondItem="u1I-r8-O54" secondAttribute="trailing" constant="10" id="bUs-Y7-S0s"/>
+                            <constraint firstItem="u1I-r8-O54" firstAttribute="centerX" secondItem="C2l-5v-QBd" secondAttribute="centerX" id="lSE-zz-Led"/>
+                            <constraint firstItem="u1I-r8-O54" firstAttribute="centerY" secondItem="C2l-5v-QBd" secondAttribute="centerY" id="qc6-V4-BMG"/>
+                            <constraint firstItem="slY-bn-ekg" firstAttribute="trailing" secondItem="wtK-ZQ-bY3" secondAttribute="trailing" constant="10" id="sA3-ro-eOd"/>
+                            <constraint firstItem="slY-bn-ekg" firstAttribute="bottom" secondItem="wtK-ZQ-bY3" secondAttribute="bottom" constant="20" id="y9f-2K-hvf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="slY-bn-ekg"/>
+                    </view>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="u1I-r8-O54" id="Wvm-OO-fpp"/>
+                        <outlet property="titleBottomContraint" destination="y9f-2K-hvf" id="7qV-Jr-w0r"/>
+                        <outlet property="titleLabel" destination="wtK-ZQ-bY3" id="js1-Nr-jDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2f-w3-GBg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
