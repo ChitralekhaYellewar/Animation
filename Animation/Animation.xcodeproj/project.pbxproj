@@ -99,12 +99,10 @@
 		5222D331212D3B3F002D8CF8 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				5222D332212D3B3F002D8CF8 /* AppDelegate.swift */,
+				5222D39E212D723B002D8CF8 /* SupportingFiles */,
 				5222D336212D3B3F002D8CF8 /* Main.storyboard */,
-				5222D339212D3B3F002D8CF8 /* Assets.xcassets */,
-				5222D33B212D3B3F002D8CF8 /* LaunchScreen.storyboard */,
 				5222D33E212D3B3F002D8CF8 /* Info.plist */,
-				5222D39A212D4179002D8CF8 /* AnimationViewController.swift */,
+				5222D39F212D724C002D8CF8 /* ViewController */,
 				5222D39C212D5A04002D8CF8 /* Constants.swift */,
 			);
 			path = Animation;
@@ -126,6 +124,24 @@
 				5222D354212D3B3F002D8CF8 /* Info.plist */,
 			);
 			path = AnimationUITests;
+			sourceTree = "<group>";
+		};
+		5222D39E212D723B002D8CF8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5222D332212D3B3F002D8CF8 /* AppDelegate.swift */,
+				5222D339212D3B3F002D8CF8 /* Assets.xcassets */,
+				5222D33B212D3B3F002D8CF8 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5222D39F212D724C002D8CF8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5222D39A212D4179002D8CF8 /* AnimationViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
