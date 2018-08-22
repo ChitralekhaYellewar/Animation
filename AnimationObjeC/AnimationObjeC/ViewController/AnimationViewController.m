@@ -31,22 +31,24 @@
 }
     
 - (void)startAnimation {
-    [self animatingTitleLabel];
+    [self animateTitleLabel];
 }
 
 #pragma Mark- animate title label
     
-- (void)animatingTitleLabel {
+- (void)animateTitleLabel {
     [UIView animateWithDuration:ANIMATE_DURATION delay:ANIMATE_DELAY options:UIViewAnimationOptionTransitionCurlUp animations:^{
         self.titleLabel.alpha = ALPHA_ONE;
         [self.titleBottomConstraint setConstant:self.view.frame.size.height * BOTTOM_MULTIPLIER];
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-        [self animateDescLabel];
+        [self animateSubtitleLabel];
     }];
 }
+
+#pragma Mark- animate subtitle label
     
-- (void)animateDescLabel {
+- (void)animateSubtitleLabel {
     [UIView animateWithDuration:ANIMATE_DURATION delay:ANIMATE_DELAY options:UIViewAnimationOptionTransitionCurlUp animations:^{
         self.subTitleLabel.alpha = ALPHA_ONE;
         [self.view layoutIfNeeded];
